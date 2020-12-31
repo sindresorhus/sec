@@ -1,4 +1,4 @@
-# sec [![Build Status](https://travis-ci.org/sindresorhus/sec.svg?branch=master)](https://travis-ci.org/sindresorhus/sec)
+# sec
 
 > Convert a time string to seconds: `'00:22:17'` → `1337`
 
