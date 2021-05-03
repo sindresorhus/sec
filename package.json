@@ -1,6 +1,6 @@
 {
 	"name": "sec",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Convert a time string to seconds: `'00:22:17'` → `1337`",
 	"license": "MIT",
 	"repository": "sindresorhus/sec",
