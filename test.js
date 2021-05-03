@@ -1,11 +1,11 @@
 import test from 'ava';
-import fn from './';
+import toSeconds from './index.js';
 
-test(t => {
-	t.is(fn('00:00:05'), 5);
-	t.is(fn('00:01:00'), 60);
-	t.is(fn('01:01:01'), 3661);
-	t.is(fn('01:00'), 60);
-	t.is(fn('01'), 1);
-	t.is(fn('1'), 1);
+test('main', t => {
+	t.is(toSeconds('00:00:05'), 5);
+	t.is(toSeconds('00:01:00'), 60);
+	t.is(toSeconds('01:01:01'), 3661);
+	t.is(toSeconds('01:00'), 60);
+	t.is(toSeconds('01'), 1);
+	t.is(toSeconds('1'), 1);
 });

@@ -1,13 +1,12 @@
-'use strict';
-module.exports = function (str) {
-	var parts = str.split(':');
-	var sec = 0;
-	var min = 1;
+export default function toSeconds(string) {
+	const parts = string.split(':');
+	let seconds = 0;
+	let mininutes = 1;
 
 	while (parts.length > 0) {
-		sec += min * parseInt(parts.pop(), 10);
-		min *= 60;
+		seconds += mininutes * Number.parseInt(parts.pop(), 10);
+		mininutes *= 60;
 	}
 
-	return sec;
-};
+	return seconds;
+}

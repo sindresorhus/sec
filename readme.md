@@ -2,31 +2,24 @@
 
 > Convert a time string to seconds: `'00:22:17'` → `1337`
 
-
 ## Install
 
 ```
-$ npm install --save sec
+$ npm install sec
 ```
-
 
 ## Usage
 
 ```js
-var sec = require('sec');
+import toSeconds from 'sec';
 
 // hours:minutes:seconds
-sec('00:22:17');
+toSeconds('00:22:17');
 //=> 1337
 
-sec('22:17');
+toSeconds('22:17');
 //=> 1337
 
-sec('17');
+toSeconds('17');
 //=> 17
 ```
-
-
-## License
-
-MIT © [Sindre Sorhus](http://sindresorhus.com)

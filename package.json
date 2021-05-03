@@ -1,37 +1,39 @@
 {
-  "name": "sec",
-  "version": "1.0.0",
-  "description": "Convert a time string to seconds: '00:22:17' → 1337",
-  "license": "MIT",
-  "repository": "sindresorhus/sec",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "sec",
-    "second",
-    "seconds",
-    "time",
-    "string",
-    "str",
-    "data",
-    "hms",
-    "hour",
-    "minute",
-    "convert"
-  ],
-  "devDependencies": {
-    "ava": "*"
-  }
+	"name": "sec",
+	"version": "1.0.0",
+	"description": "Convert a time string to seconds: `'00:22:17'` → `1337`",
+	"license": "MIT",
+	"repository": "sindresorhus/sec",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"type": "module",
+	"exports": "./index.js",
+	"engines": {
+		"node": ">=12"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"second",
+		"seconds",
+		"time",
+		"string",
+		"data",
+		"hms",
+		"hour",
+		"minute",
+		"convert"
+	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"xo": "^0.39.1"
+	}
 }
